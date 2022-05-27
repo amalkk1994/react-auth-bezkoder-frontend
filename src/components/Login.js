@@ -33,7 +33,8 @@ const Login = (props) => {
     dispatch(login({ username, password }))
       .unwrap()
       .then(() => {
-        props.history.push("/profile");
+        console.log("trigger reload");
+        //props.history.push("/profile");
         window.location.reload();
       })
       .catch(() => {

@@ -76,7 +76,7 @@ function App() {
           {currentUser ? (
             <div className="navbar-nav m1-auto">
               <li className="nav-item">
-                <Link to={"/profie"} className="nav-link">
+                <Link to={"/profile"} className="nav-link">
                   {currentUser.username}
                 </Link>
               </li>
